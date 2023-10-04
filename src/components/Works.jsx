@@ -71,7 +71,7 @@ const Works = () => {
 
               <div className="mt-5">
                 <h3 className="text-white text-xl font-bold">{project.name}</h3>
-                <p className="text-gray-400 text-sm font-semibold mt-4 leading-5">
+                <p className="text-gray-400 text-sm font-semibold mt-4 leading-5 truncate">
                   {project.description}
                 </p>
               </div>
