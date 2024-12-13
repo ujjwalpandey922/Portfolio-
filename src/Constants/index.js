@@ -16,12 +16,10 @@ import {
   figma,
   // docker,
   Whitehatjr,
-  // meta,
-  // starbucks,
-
-  // tesla,
-  // shopify,
-  // carrent,
+  skitres,
+  puffles,
+  zerostic,
+  fundinc,
   jobit,
   tripguide,
   threejs,
@@ -57,7 +55,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Nextjs Developer",
     icon: web,
   },
   {
@@ -127,16 +125,69 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Frontend Developer",
+    company_name: "Puffles.io",
+    icon: puffles,
+    iconBg: "#6A5ACD",
+    date: "June 2024 - Current",
+    points: [
+      "Developed an NFT marketplace enabling non-technical users to upload NFTs.",
+      "Transformed Figma designs into responsive web interfaces.",
+      "Integrated frontend components with the backend using Tailwind CSS and Redux.",
+      "Contributed to Web 3.0 innovations through blockchain-based project development.",
+    ],
+  },
+  {
+    title: "Lead Frontend Developer",
+    company_name: "Zerostic",
+    icon: zerostic,
+    iconBg: "#FF6347",
+    date: "March 2024 - May 2024",
+    points: [
+      "Managed and oversaw the entire frontend development process.",
+      "Collaborated with cross-functional teams to deliver user-friendly interfaces.",
+      "Ensured project delivery within deadlines by implementing efficient workflows.",
+      "Adhered to industry standards and best practices in frontend development.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Skitre",
+    icon: skitres,
+    iconBg: "#00A86B",
+    date: "January 2023 - June 2023",
+    points: [
+      "Built SEO-friendly web applications using Next.js with server-side rendering capabilities.",
+      "Enhanced data security through Zod-based data validation.",
+      "Designed visually appealing UIs using Shadcn and Tailwind CSS.",
+      "Improved code quality with TypeScript and static type checking.",
+    ],
+  },
+
+  {
+    title: "Software Developer",
+    company_name: "Fundinc",
+    icon: fundinc,
+    iconBg: "#3778C2",
+    date: "August 2022 - December 2022",
+    points: [
+      "Gained insights into the operations of a SaaS company.",
+      "Developed scalable and dynamic web applications using Firebase and React.",
+      "Implemented real-time database management and authentication systems.",
+      "Enhanced the user experience through efficient UI development.",
+    ],
+  },
+  {
     title: "Teacher",
     company_name: "White Hat Jr",
     icon: Whitehatjr,
     iconBg: "#383E56",
-    date: "June 2021 - Current",
+    date: "June 2021 - November 2023",
     points: [
-      "	Utilized innovative teaching techniques to engage disinterested students, resulting in a 40% increase in class participation and engagement.",
+      "Utilized innovative teaching techniques to engage disinterested students, resulting in a 40% increase in class participation and engagement.",
       "Conducted regular assessments to track student progress and identified areas for improvement, resulting in a 25% decrease in student dropouts over the course of two years.",
       "Developed customized lesson plans for students of ages 6-50, resulting in a 20% increase in student engagement and retention rates.",
-      "Meanwhile did learnt all the basic to advance techs needed for web development such as JS, React and MERN  ",
+      "Learned essential web development technologies, including JavaScript, React, and the MERN stack.",
     ],
   },
 ];
@@ -214,9 +265,9 @@ const projects = [
     live_code_link: "https://tokken-tracker.netlify.app/",
   },
   {
-    name: "Spotify 2.0",
+    name: "Poke Dex",
     description:
-      "The Spotify Clone with Redux is a web application that emulates the popular music streaming platform, Spotify. Built using React.js and Redux, this app showcases my expertise in frontend development and state management using Redux.",
+      "The Pokemon Dex App with Redux is a web application that emulates the popular pokemon power system. Built using React.js and Redux, this app showcases my expertise in frontend development and state management using Redux.",
     tags: [
       {
         name: "React",
@@ -232,8 +283,8 @@ const projects = [
       },
     ],
     image: spotify,
-    source_code_link: "https://github.com/ujjwalpandey922/Spotify_2",
-    live_code_link: "https://spofity-2.netlify.app/",
+    source_code_link: "https://github.com/ujjwalpandey922/pokedex",
+    live_code_link: "https://pokedex-phi-dun.vercel.app/",
   },
   {
     name: "TODO APP",
@@ -258,8 +309,8 @@ const projects = [
       },
     ],
     image: todo,
-    source_code_link: "https://github.com/ujjwalpandey922/inoteBook",
-    live_code_link: "https://inotekeep.cyclic.app",
+    source_code_link: "https://github.com/ujjwalpandey922/redux-todo",
+    live_code_link: "redux-todo-omega-five.vercel.app",
   },
   {
     name: "Youtube Clone",
@@ -285,7 +336,7 @@ const projects = [
     ],
     image: utube,
     source_code_link: "https://github.com/ujjwalpandey922/Uthub",
-    live_code_link: "https://uthub.cyclic.app/",
+    live_code_link: "https://uthub.vercel.app/",
   },
   {
     name: "Trip Guide",
@@ -307,7 +358,7 @@ const projects = [
     ],
     image: booking,
     source_code_link: "https://github.com/ujjwalpandey922/bookingapp",
-    live_code_link: "https://bookinappclone.cyclic.app/",
+    live_code_link: "https://bookingapp-bice.vercel.app/",
   },
   {
     name: "Kitchen G",
@@ -355,9 +406,9 @@ const projects = [
   },
   ,
   {
-    name: "Web3 Note App",
+    name: "Web3 Address Minting App",
     description:
-      "The Web 3.0 Note App is a decentralized web application that leverages the power of Web 3.0 technologies to provide a secure and user-centric note-taking experience. Built using blockchain and decentralized storage, this app ensures data integrity, privacy, and seamless accessibility from anywhere.",
+      "The Web 3.0 Address Minting App is a decentralized web application that leverages the power of Web 3.0 technologies to provide a secure and user-centric address-looking experience. Built using blockchain and decentralized storage, this app ensures data integrity, privacy, and seamless accessibility from anywhere.",
     tags: [
       {
         name: "react",
@@ -377,8 +428,8 @@ const projects = [
       },
     ],
     image: web3,
-    source_code_link: "https://github.com/ujjwalpandey922/Dweb-todo",
-    live_code_link: "https://dweb-todo-app.netlify.app/",
+    source_code_link: "https://github.com/ujjwalpandey922/addMint",
+    live_code_link: "https://add-mint.vercel.app/",
   },
 ];
 

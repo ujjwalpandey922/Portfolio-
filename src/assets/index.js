@@ -22,28 +22,32 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import Whitehatjr from "./company/Whitehatjr.png";
+import skitres from "./company/skitres.jpeg";
+import puffles from "./company/puffles.jpg";
+import zerostic from "./company/zerostic.jpg";
+import fundinc from "./company/fundinc.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import todo from "./website1.png";
+import todo from "./website.jpg";
 import booking from "./website2.png";
 import utube from "./website3.png";
 
 import movie from "./website4.png";
 import token from "./website5.png";
-import spotify from "./website6.png";
+import spotify from "./website10.jpg";
 
 import kitchen from "./website7.png";
 import gpt from "./website8.png";
-import web3 from "./website9.png";
+import web3 from "./website9.jpg";
 export {
+  skitres,
+  puffles,
+  zerostic,
+  fundinc,
   Whitehatjr,
   logo,
   backend,
@@ -67,10 +71,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,

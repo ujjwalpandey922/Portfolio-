@@ -1,6 +1,7 @@
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { motion } from "framer-motion";
+import ParticlesContainer from "./canvas/Particles";
 const Hero = () => {
   return (
     <section className="w-full relative mx-auto h-screen">
@@ -17,12 +18,12 @@ const Hero = () => {
             <span className="text-green-700 "> UJJWAL HERE</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
-            I Do Development.
+            I Do Software Development.
           </p>
         </div>
       </div>
       <ComputersCanvas />
-
+      <ParticlesContainer />
       <div className="flex justify-center items-center w-full  absolute bottom-[-1rem] z-10">
         <a href="#About">
           <div className="flex justify-center items-start p-2 border-secondary border-4 rounded-3xl sm:w-[35px] sm:h-[64px] w-[30px] h-[54px] cursor-pointer">
