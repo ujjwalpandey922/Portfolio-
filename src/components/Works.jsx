@@ -27,9 +27,9 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-      <div className="flex flex-col w-full sm:flex-wrap gap-4 sm:gap-10 mt-6 sm:mt-12">
-        {projects?.map((project, index) => (
-          <motion.div
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-12">
+        {projects.map((project, index) => (
+          <motion.dev
             variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
             key={project.name}
           >
@@ -39,7 +39,7 @@ const Works = () => {
                 scale: 1,
                 speed: 450,
               }}
-              className="bg-tertiary p-5 rounded-3xl sm:w-[340px] w-full"
+              className="bg-tertiary p-5 rounded-3xl sm:w-[340px] w-full h-full"
             >
               <div className="relative w-full h-[250px]">
                 <img
@@ -88,7 +88,7 @@ const Works = () => {
                 ))}
               </div>
             </Tilt>
-          </motion.div>
+          </motion.dev>
         ))}
       </div>
     </>
