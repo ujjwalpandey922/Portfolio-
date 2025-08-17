@@ -1,16 +1,16 @@
-import React, { useRef, useState } from "react";
-import { SectionWrapper } from "../hoc";
-import { motion } from "framer-motion";
-import { fadeIn } from "../utls/motion";
-import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from 'react';
+import { SectionWrapper } from '../hoc';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../utls/motion';
+import { styles } from '../styles';
+import { EarthCanvas } from './canvas';
+import emailjs from '@emailjs/browser';
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
   const [loading, setLoading] = useState(false);
 
@@ -25,39 +25,39 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_rz12aqe",
-        "template_bdk9pur",
+        'service_rz12aqe',
+        'template_bdk9pur',
         {
           from_name: form.name,
-          to_name: "Ujjwal Pandey",
+          to_name: 'Ujjwal Pandey',
           from_email: form.email,
-          to_email: "ujjwalpandey922@gmail.com",
+          to_email: 'ujjwalpandey922@gmail.com',
           message: form.message,
         },
-        "FyJzCSJKiIVBlBNpc"
+        'FyJzCSJKiIVBlBNpc'
       )
       .then(() => {
         setLoading(false);
-        alert("Thank you. I will get back to you as soon as possible.");
+        alert('Thank you. I will get back to you as soon as possible.');
         //reset the form........
         setForm({
-          name: "",
-          email: "",
-          message: "",
+          name: '',
+          email: '',
+          message: '',
         });
       })
       .catch((error) => {
         setLoading(false);
 
-        alert("Something Went Wrong Try Again...");
+        alert('Something Went Wrong Try Again...');
       });
   };
 
   return (
     <div className=" xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden ">
       <motion.div
-        variants={fadeIn("left", "tween", 0.2, 1)}
-        className="flex-[.75] bg-black-100 rounded-2xl p-8"
+        variants={fadeIn('left', 'tween', 0.2, 1)}
+        className="flex-[.75] bg-black-100 rounded-2xl p-4 sm:p-8"
       >
         <p className={styles.sectionSubText}>How to get in touch</p>
         <h2 className={styles.sectionHeadText}>CONTACT...</h2>
@@ -65,7 +65,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="flex- flex-col gap-4 mt-12"
+          className="flex- flex-col gap-4 mt-6 sm:mt-12"
         >
           <label className="flex flex-col gap-2 mt-4">
             <span className="text-white text-sm ">What's Your Name?</span>
@@ -74,7 +74,7 @@ const Contact = () => {
               className="border-none outline-none py-4 px-4 text-white-100 bg-tertiary rounded-lg"
               name="name"
               value={form.name}
-              placeholder="Kimino Namaywa?"
+              placeholder="Enter Name Here..."
               onChange={handleChange}
             />
           </label>
@@ -85,7 +85,7 @@ const Contact = () => {
               className="border-none outline-none py-4 px-4 text-white-100 bg-tertiary rounded-lg"
               name="email"
               value={form.email}
-              placeholder="Kimino E mēru ?"
+              placeholder="Enter Email Here..."
               onChange={handleChange}
             />
           </label>
@@ -96,7 +96,7 @@ const Contact = () => {
               className="border-none outline-none py-4 px-4 text-white-100 bg-tertiary rounded-lg"
               name="message"
               value={form.message}
-              placeholder="Kimino Messēji?"
+              placeholder="Enter Message Here..."
               onChange={handleChange}
             />
           </label>
@@ -105,12 +105,12 @@ const Contact = () => {
             type="submit"
             className="bg-tertiary mt-4 py-4 w-full rounded-xl shadow-md shadow-primary font-bold text-white"
           >
-            {loading ? "Sending..." : "Send"}
+            {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
       </motion.div>
       <motion.div
-        variants={fadeIn("right", "tween", 0.2, 1)}
+        variants={fadeIn('right', 'tween', 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
@@ -119,4 +119,4 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, "Contact");
+export default SectionWrapper(Contact, 'Contact');

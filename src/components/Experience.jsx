@@ -1,30 +1,30 @@
-import { motion } from "framer-motion";
-import { textVariant } from "../utls/motion";
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
+import { motion } from 'framer-motion';
+import { textVariant } from '../utls/motion';
+import { styles } from '../styles';
+import { SectionWrapper } from '../hoc';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+} from 'react-vertical-timeline-component';
 
-import "react-vertical-timeline-component/style.min.css";
-import { experiences } from "../Constants";
+import 'react-vertical-timeline-component/style.min.css';
+import { experiences } from '../Constants';
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: '#1d1836',
+        color: '#fff',
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: '7px solid  #232631' }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
+        <div className="flex justify-center items-center w-full h-full rounded-full">
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className="w-[60px] h-[60px] object-contain rounded-full"
+            className="w-[60px] h-auto object-contain rounded-full"
           />
         </div>
       }
@@ -61,8 +61,8 @@ const Experience = () => {
       </motion.div>
       <div className="flex flex-col mt-20">
         <VerticalTimeline>
-          {experiences.map((experience) => (
-            <ExperienceCard key={experience.title} experience={experience} />
+          {experiences.map((experience, id) => (
+            <ExperienceCard key={id} experience={experience} />
           ))}
         </VerticalTimeline>
       </div>
@@ -70,4 +70,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "Work");
+export default SectionWrapper(Experience, 'Work');

@@ -1,12 +1,12 @@
-import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
+import Tilt from 'react-parallax-tilt';
+import { motion } from 'framer-motion';
 
-import { styles } from "../styles";
-import { github } from "../assets";
-import { live } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { projects } from "../Constants";
-import { fadeIn, textVariant } from "../utls/motion";
+import { styles } from '../styles';
+import { github } from '../assets';
+import { live } from '../assets';
+import { SectionWrapper } from '../hoc';
+import { projects } from '../Constants';
+import { fadeIn, textVariant } from '../utls/motion';
 
 const Works = () => {
   return (
@@ -17,7 +17,7 @@ const Works = () => {
       </motion.div>
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
@@ -27,10 +27,10 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-      <div className="flex flex-wrap gap-10 mt-12">
-        {projects.map((project, index) => (
-          <motion.dev
-            variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      <div className="flex flex-col w-full sm:flex-wrap gap-4 sm:gap-10 mt-6 sm:mt-12">
+        {projects?.map((project, index) => (
+          <motion.div
+            variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
             key={project.name}
           >
             <Tilt
@@ -50,14 +50,18 @@ const Works = () => {
                 <div className="absolute inset-0 flex justify-end m-1 card-img_hover  gap-2  ">
                   {/* ----------GIT REPO----------- */}
                   <div
-                    onClick={()=>window.open(project.source_code_link, "_blank")}
+                    onClick={() =>
+                      window.open(project.source_code_link, '_blank')
+                    }
                     className="h-7 w-7 black-gradient rounded-full cursor-pointer hover:h-8 hover:w-8 "
                   >
                     <img src={github} alt="github" />
                   </div>
                   {/* ----------LIVE PROJECTS----------- */}
                   <div
-                    onClick={()=>window.open(project.live_code_link, "_blank")}
+                    onClick={() =>
+                      window.open(project.live_code_link, '_blank')
+                    }
                     className="h-7 w-7 black-gradient rounded-full cursor-pointer hover:h-8 hover:w-8"
                   >
                     <img
@@ -84,11 +88,11 @@ const Works = () => {
                 ))}
               </div>
             </Tilt>
-          </motion.dev>
+          </motion.div>
         ))}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "Projects");
+export default SectionWrapper(Works, 'Projects');
