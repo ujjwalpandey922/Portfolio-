@@ -1,18 +1,38 @@
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../assets/Logos/Logo3.png';
 import { navLinks } from '../Constants';
 import { close, menu } from '../assets';
 
 const Navbar = () => {
-  const [active, setActive] = useState();
+  const [active, setActive] = useState('');
   const [handleToggle, setHandleToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${
+        styles.paddingX
+      } w-full flex items-center py-5 fixed top-0 z-50 transition-colors duration-300 ${
+        scrolled ? 'bg-primary shadow-md' : 'bg-transparent'
+      }`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto ">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -31,40 +51,44 @@ const Navbar = () => {
             <span className="lg:block hidden"> | Software Developer</span>
           </p>
         </Link>
-        <ul className="list-none sm:flex hidden flex-row gap-10 ">
+
+        {/* Desktop nav */}
+        <ul className="list-none sm:flex hidden flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={` ${
-                active === link.title && 'text-green-500'
-              }  hover:text-green-700 cursor-pointer font-medium`}
+              className={`${
+                active === link.title ? 'text-green-500' : 'text-white'
+              } hover:text-green-700 cursor-pointer font-medium`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${active}`}> {link.title}</a>{' '}
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
+
+        {/* Mobile nav */}
         <div className="flex sm:hidden relative">
           <img
             src={handleToggle ? close : menu}
             alt="menu"
-            className="cursor-pointer h-7 w-7 "
+            className="cursor-pointer h-7 w-7"
             onClick={() => setHandleToggle(!handleToggle)}
           />
           {handleToggle && (
-            <div className="absolute top-[2rem] right-0 bg-slate-700">
+            <div className="absolute top-[2rem] right-0 bg-slate-700 rounded-md p-2">
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={` ${
-                    active === link.title && 'text-green-300'
-                  }  hover:text-teal-500 cursor-pointer font-medium list-none p-2 `}
+                  className={`${
+                    active === link.title ? 'text-green-300' : 'text-white'
+                  } hover:text-teal-500 cursor-pointer font-medium list-none p-2`}
                   onClick={() => {
                     setActive(link.title);
-                    setHandleToggle(!handleToggle);
+                    setHandleToggle(false);
                   }}
                 >
-                  <a href={`#${active}`}> {link.title}</a>{' '}
+                  <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
             </div>

@@ -3,7 +3,7 @@ import { SectionWrapper } from '../hoc';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utls/motion';
 import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
+import { ComputersCanvas, EarthCanvas } from './canvas';
 import emailjs from '@emailjs/browser';
 const Contact = () => {
   const formRef = useRef();
@@ -113,10 +113,11 @@ const Contact = () => {
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <EarthCanvas />
+        {/* <EarthCanvas /> */}
+        <ComputersCanvas />
       </motion.div>
     </div>
   );
 };
 
-export default SectionWrapper(Contact, 'Contact');
+export default SectionWrapper(Contact, 'contact');

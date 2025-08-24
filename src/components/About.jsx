@@ -1,15 +1,15 @@
-import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
-import { styles } from "../styles";
-import { fadeIn, textVariant } from "../utls/motion";
-import { services } from "../Constants";
-import { SectionWrapper } from "../hoc";
+import { motion } from 'framer-motion';
+import Tilt from 'react-parallax-tilt';
+import { styles } from '../styles';
+import { fadeIn, textVariant } from '../utls/motion';
+import { services } from '../Constants';
+import { SectionWrapper } from '../hoc';
 
 const SingleService = ({ index, title, icon }) => {
   return (
     <Tilt className="w-full sm:w-[250px]">
       <motion.div
-        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
@@ -43,7 +43,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>OVERVIEW...</h2>
       </motion.div>
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary max-w-3xl leading-[30px] text-[17px]"
       >
         Passionate front-end developer with 2.5+ years of experience, including
@@ -66,4 +66,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "About");
+export default SectionWrapper(About, 'about');

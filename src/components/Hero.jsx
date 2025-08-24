@@ -1,7 +1,8 @@
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+import { ComputersCanvas, EarthCanvas } from './canvas';
 import { motion } from 'framer-motion';
 import ParticlesContainer from './canvas/Particles';
+import { fadeIn } from '../utls/motion';
 const Hero = () => {
   return (
     <section className="w-full relative mx-auto h-screen">
@@ -22,8 +23,16 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
-      <ParticlesContainer />
+      {/* <ComputersCanvas />
+      <ParticlesContainer /> */}
+      <div className="flex justify-center items-end h-screen w-full pb-32">
+        <motion.div
+          variants={fadeIn('right', 'tween', 0.2, 1)}
+          className=" flex-1 w-full md:h-[550px] h-[350px] "
+        >
+          <EarthCanvas />
+        </motion.div>
+      </div>
       <div className="flex justify-center items-center w-full  absolute bottom-[-1rem] z-10">
         <a href="#About">
           <div className="flex justify-center items-start p-2 border-secondary border-4 rounded-3xl sm:w-[35px] sm:h-[64px] w-[30px] h-[54px] cursor-pointer">
