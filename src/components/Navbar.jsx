@@ -48,7 +48,7 @@ const Navbar = () => {
           />
           <p className="text-white text-[18px] font-normal cursor-pointer flex">
             Ujjwal Pandey &nbsp;
-            <span className="lg:block hidden"> | Software Developer</span>
+            <span className="lg:block hidden"> | Frontend Developer</span>
           </p>
         </Link>
 
