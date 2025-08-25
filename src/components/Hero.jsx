@@ -25,10 +25,10 @@ const Hero = () => {
       </div>
       {/* <ComputersCanvas />
       <ParticlesContainer /> */}
-      <div className="flex justify-center items-end h-screen w-full pb-32">
+      <div className="flex justify-center items-end h-screen w-full">
         <motion.div
           variants={fadeIn('right', 'tween', 0.2, 1)}
-          className=" flex-1 w-full md:h-[550px] h-[350px] "
+          className=" flex-1 w-full md:h-[550px] h-[350px]  pb-4 sm:pb-0 "
         >
           <EarthCanvas />
         </motion.div>
