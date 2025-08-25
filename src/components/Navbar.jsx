@@ -41,11 +41,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img
+          {/* <img
             src={logo}
             alt="Website Logo"
             className="object-contain w-14 h-14 rounded-full"
-          />
+          /> */}
           <p className="text-white text-[18px] font-normal cursor-pointer flex">
             Ujjwal Pandey &nbsp;
             <span className="lg:block hidden"> | Frontend Developer</span>
