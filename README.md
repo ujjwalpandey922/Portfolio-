@@ -3,7 +3,7 @@
 Welcome to my personal portfolio repository! This is a modern, highly interactive, and responsive web application built to showcase my skills, experience, and projects as a Senior Frontend Developer.
 
 ## 🚀 Live Demo
-*(You can add your live deployment URL here once hosted, e.g., Vercel or Netlify)*
+[https://ujjwal-pandey-portfolio.netlify.app/](https://ujjwal-pandey-portfolio.netlify.app/)
 
 ## 🛠️ Built With
 
@@ -73,9 +73,10 @@ src/
 
 ## 📧 Contact & Connect
 
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- **GitHub**: [Your GitHub Profile](https://github.com/yourusername)
-- **Email**: your.email@example.com
+- **LinkedIn**: [Ujjwal Pandey](https://www.linkedin.com/in/ujjwal-pandey-1ba5b5130)
+- **GitHub**: [@ujjwalpandey922](https://github.com/ujjwalpandey922)
+- **Twitter**: [@ujjwalpandey922](https://twitter.com/ujjwalpandey922)
+- **Email**: [ujjwalpandey922@gmail.com](mailto:ujjwalpandey922@gmail.com)
 
 ---
 
