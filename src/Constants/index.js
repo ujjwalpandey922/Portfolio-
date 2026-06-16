@@ -15,13 +15,10 @@ import {
   git,
   figma,
   // docker,
-  Whitehatjr,
   skitres,
+  Sofueled,
   puffles,
-  zerostic,
-  fundinc,
-  jobit,
-  tripguide,
+  apeing,
   threejs,
   todo,
   booking,
@@ -32,6 +29,10 @@ import {
   kitchen,
   gpt,
   web3,
+  nextjsIcon,
+  reactIcon,
+  web3Icon,
+  mernIcon,
 } from "../assets";
 
 export const navLinks = [
@@ -56,19 +57,19 @@ export const navLinks = [
 const services = [
   {
     title: "Nextjs Developer",
-    icon: web,
+    icon: nextjsIcon,
   },
   {
     title: "React Developer",
-    icon: mobile,
+    icon: reactIcon,
   },
   {
     title: "Web3 Developer",
-    icon: backend,
+    icon: web3Icon,
   },
   {
     title: "MERN Developer",
-    icon: creator,
+    icon: mernIcon,
   },
 ];
 
@@ -125,29 +126,41 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend Developer",
-    company_name: "Puffles.io",
-    icon: puffles,
-    iconBg: "#6A5ACD",
-    date: "June 2024 - Current",
+    title: "Web3 Frontend Developer",
+    company_name: "Apeing",
+    icon: apeing,
+    iconBg: "#383E56",
+    date: "Nov 2025 – Present",
     points: [
-      "Developed an NFT marketplace enabling non-technical users to upload NFTs.",
-      "Transformed Figma designs into responsive web interfaces.",
-      "Integrated frontend components with the backend using Tailwind CSS and Redux.",
-      "Contributed to Web 3.0 innovations through blockchain-based project development.",
+      "Sole frontend engineer for the Perps trading dashboard, delivering a fully integrated, production-ready product in under 2 months using Next.js, TypeScript, and Tailwind CSS.",
+      "Built AlphaRoom, a live-streaming feature enabling simultaneous on-chain trading and content streaming; drove 200+ user sign-ups during the beta launch.",
+      "Architected seamless wallet and smart contract integrations, reducing transaction friction across minting and trading user flows.",
+      "Collaborated closely with smart contract and backend teams to align on-chain and off-chain data states, ensuring real-time accuracy across the dashboard.",
     ],
   },
   {
-    title: "Lead Frontend Developer",
-    company_name: "Zerostic",
-    icon: zerostic,
-    iconBg: "#FF6347",
-    date: "March 2024 - May 2024",
+    title: "Frontend Developer (Freelance)",
+    company_name: "Sofueled",
+    icon: Sofueled,
+    iconBg: "#E6DEDD",
+    date: "Aug 2025 – Nov 2025",
     points: [
-      "Managed and oversaw the entire frontend development process.",
-      "Collaborated with cross-functional teams to deliver user-friendly interfaces.",
-      "Ensured project delivery within deadlines by implementing efficient workflows.",
-      "Adhered to industry standards and best practices in frontend development.",
+      "Designed and shipped Bhao Bhao, a live pet grooming booking app built with React and TypeScript, currently serving an active daily user base of 4–5 bookings per day.",
+      "Owned end-to-end UI architecture — component design, state management, and responsive layout — as the sole frontend resource.",
+      "Maintained a clean, reusable component structure enabling rapid post-launch iteration without regression.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Puffles",
+    icon: puffles,
+    iconBg: "#6A5ACD",
+    date: "May 2024 – Aug 2025",
+    points: [
+      "Redesigned and shipped the full landing page and NFT minting dashboard (puffles.io) in under 45 days, integrating support for 3 blockchain networks — Ape, Monad, and a third chain.",
+      "Enabled weekly recurring minting activity through a performant, low-friction minting UX built with React and plain CSS.",
+      "Minimised third-party library dependencies, reducing bundle size and improving initial page load performance.",
+      "Delivered multi-chain wallet connection flows, allowing users to switch networks seamlessly without leaving the app.",
     ],
   },
   {
@@ -155,39 +168,12 @@ const experiences = [
     company_name: "Skitre",
     icon: skitres,
     iconBg: "#00A86B",
-    date: "January 2023 - June 2023",
+    date: "Nov 2023 – May 2024",
     points: [
-      "Built SEO-friendly web applications using Next.js with server-side rendering capabilities.",
-      "Enhanced data security through Zod-based data validation.",
-      "Designed visually appealing UIs using Shadcn and Tailwind CSS.",
-      "Improved code quality with TypeScript and static type checking.",
-    ],
-  },
-
-  {
-    title: "Software Developer",
-    company_name: "Fundinc",
-    icon: fundinc,
-    iconBg: "#3778C2",
-    date: "August 2022 - December 2022",
-    points: [
-      "Gained insights into the operations of a SaaS company.",
-      "Developed scalable and dynamic web applications using Firebase and React.",
-      "Implemented real-time database management and authentication systems.",
-      "Enhanced the user experience through efficient UI development.",
-    ],
-  },
-  {
-    title: "Teacher",
-    company_name: "White Hat Jr",
-    icon: Whitehatjr,
-    iconBg: "#383E56",
-    date: "June 2021 - November 2023",
-    points: [
-      "Utilized innovative teaching techniques to engage disinterested students, resulting in a 40% increase in class participation and engagement.",
-      "Conducted regular assessments to track student progress and identified areas for improvement, resulting in a 25% decrease in student dropouts over the course of two years.",
-      "Developed customized lesson plans for students of ages 6-50, resulting in a 20% increase in student engagement and retention rates.",
-      "Learned essential web development technologies, including JavaScript, React, and the MERN stack.",
+      "Built an animated onboarding dashboard that successfully onboarded 250+ BSc Engineering graduates from Gujarat state within the first week of launch.",
+      "Implemented smooth UI animations and guided onboarding flows using Next.js, TypeScript, Tailwind CSS, and React Query, significantly reducing sign-up drop-off.",
+      "Mentored and guided 2 frontend interns, conducting code reviews and establishing component conventions adopted across the team.",
+      "Adopted Shadcn UI as the component library, improving design consistency and reducing time spent on new feature UI.",
     ],
   },
 ];

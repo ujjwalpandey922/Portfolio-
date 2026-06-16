@@ -1,8 +1,8 @@
-import { styles } from '../styles';
-import { ComputersCanvas, EarthCanvas } from './canvas';
-import { motion } from 'framer-motion';
-import ParticlesContainer from './canvas/Particles';
-import { fadeIn } from '../utls/motion';
+import { styles } from "../styles";
+import { ComputersCanvas, EarthCanvas } from "./canvas";
+import { motion } from "framer-motion";
+import ParticlesContainer from "./canvas/Particles";
+import { fadeIn } from "../utls/motion";
 const Hero = () => {
   return (
     <section className="w-full relative mx-auto h-screen">
@@ -27,21 +27,21 @@ const Hero = () => {
       <ParticlesContainer /> */}
       <div className="flex justify-center items-end h-screen w-full">
         <motion.div
-          variants={fadeIn('right', 'tween', 0.2, 1)}
+          variants={fadeIn("right", "tween", 0.2, 1)}
           className=" flex-1 w-full md:h-[550px] h-[350px]  pb-4 sm:pb-0 "
         >
           <EarthCanvas />
         </motion.div>
       </div>
       <div className="flex justify-center items-center w-full  absolute bottom-[-1rem] z-10">
-        <a href="#About">
+        <a href="#about">
           <div className="flex justify-center items-start p-2 border-secondary border-4 rounded-3xl sm:w-[35px] sm:h-[64px] w-[30px] h-[54px] cursor-pointer">
             <motion.div
               animate={{ y: [0, 24, 0] }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: 'loop',
+                repeatType: "loop",
               }}
               className="w-2 h-2  rounded-full bg-secondary "
             />

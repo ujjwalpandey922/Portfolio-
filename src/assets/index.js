@@ -1,3 +1,7 @@
+import nextjsIcon from "./nextjs_icon.png";
+import reactIcon from "./react_icon.png";
+import web3Icon from "./web3_icon.png";
+import mernIcon from "./mern_icon.png";
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -27,6 +31,8 @@ import skitres from "./company/skitres.jpeg";
 import puffles from "./company/puffles.jpg";
 import zerostic from "./company/zerostic.jpg";
 import fundinc from "./company/fundinc.jpeg";
+import apeing from "./company/apeing.jpg";
+import Sofueled from "./company/Sofueled.jpg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -48,8 +54,14 @@ export {
   puffles,
   zerostic,
   fundinc,
+  apeing,
   Whitehatjr,
+  Sofueled,
   logo,
+  nextjsIcon,
+  reactIcon,
+  web3Icon,
+  mernIcon,
   backend,
   creator,
   mobile,
