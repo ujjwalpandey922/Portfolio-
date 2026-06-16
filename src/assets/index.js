@@ -32,7 +32,7 @@ import puffles from "./company/puffles.jpg";
 import zerostic from "./company/zerostic.jpg";
 import fundinc from "./company/fundinc.jpeg";
 import apeing from "./company/apeing.jpg";
-import Sofueled from "./company/Sofueled.jpg";
+import Sofueled from "./company/sofueled.jpg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
