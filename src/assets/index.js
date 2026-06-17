@@ -30,7 +30,7 @@ import apeing from "./company/apeing.jpg";
 import Sofueled from "./company/sofueled.jpg";
 
 
-import todo from "./website.jpg";
+import bhaobhao from "./bhaobhao.png";
 import booking from "./website2.png";
 import utube from "./website3.png";
 
@@ -39,7 +39,7 @@ import token from "./website5.png";
 import spotify from "./website10.jpg";
 
 import kitchen from "./website7.png";
-import gpt from "./website8.png";
+import perps from "./websiteperps.png";
 import web3 from "./website9.jpg";
 export {
   skitres,
@@ -70,13 +70,13 @@ export {
   tailwind,
   typescript,
   threejs,
-  todo,
+  bhaobhao,
   booking,
   utube,
   movie,
   token,
   spotify,
   kitchen,
-  gpt,
+  perps,
   web3,
 };

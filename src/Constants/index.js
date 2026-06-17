@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -19,14 +15,14 @@ import {
   puffles,
   apeing,
   threejs,
-  todo,
+  bhaobhao,
   booking,
   utube,
   movie,
   token,
   spotify,
   kitchen,
-  gpt,
+  perps,
   web3,
   nextjsIcon,
   reactIcon,
@@ -206,9 +202,57 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Perpetual Dashboard",
+    description:
+      "The Perpetual Dashboard is a comprehensive and highly responsive interface designed for decentralized perpetual trading. Developed as the primary frontend for a fast-paced trading platform, this application empowers users to seamlessly manage their leveraged positions and execute trades in real time. It features integrated charting, dynamic trade state management, and a seamless connection to smart contracts on-chain. Built with Next.js, TypeScript, and Tailwind CSS, the platform emphasizes performance and a streamlined user experience. This robust tool simplifies complex trading mechanics, enabling users to focus on making informed trading decisions.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: perps,
+    source_code_link: "https://github.com/ujjwalpandey922/perps-dashboard",
+    live_code_link: "https://perps-dashboard-nine.vercel.app/",
+  },
+  {
+    name: "Bhao Bhao",
+    description:
+      "Bhao Bhao is a comprehensive pet grooming booking application that provides pet owners with a seamless way to schedule and manage grooming appointments. Built with Vite, it utilizes React Query for robust data fetching and Redux for predictable state management across the application. The project incorporates Tailwind CSS for an elegant, responsive user interface and TypeScript to ensure type safety and code reliability. This platform simplifies the grooming reservation process while demonstrating the ability to build scalable, state-heavy frontend applications with modern React practices.",
+    tags: [
+      {
+        name: "React Query",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: bhaobhao,
+    source_code_link: "",
+    live_code_link: "https://app.bhaobhao.in/",
+  },
+  {
     name: "Movie House",
     description:
-      "The Movie App is a dynamic web application that allows users to explore, discover, and keep track of movies. This application is built using a combination of different technologies to provide a seamless and engaging user experience.",
+      "The Movie App is a dynamic web application that allows users to explore, discover, and keep track of movies. This application is built using a combination of different technologies to provide a seamless and engaging user experience. It features an intuitive user interface where users can search for their favorite titles, view detailed information including cast and ratings, and watch high-quality trailers. The platform also provides personalized recommendations based on trending movies and user preferences. By utilizing modern web development practices, the application ensures fast loading times, responsive design across all devices, and robust performance to keep movie enthusiasts engaged.",
     tags: [
       {
         name: "React",
@@ -230,7 +274,7 @@ const projects = [
   {
     name: "Token Tracker",
     description:
-      "The Bitcoin Tracker is a web application that allows users to monitor and track the price and performance of Bitcoin, the popular cryptocurrency. With this application, users can stay up-to-date with the latest Bitcoin prices, historical data, and relevant market information.",
+      "The Bitcoin Tracker is a web application that allows users to monitor and track the price and performance of Bitcoin, the popular cryptocurrency. With this application, users can stay up-to-date with the latest Bitcoin prices, historical data, and relevant market information. It offers interactive and dynamic charts to help users visualize price fluctuations and make informed trading decisions. Additionally, the dashboard provides real-time updates and an intuitive breakdown of trading volumes and market cap. This comprehensive tool empowers both novice and experienced crypto enthusiasts to closely follow market trends in an accessible and visually appealing format.",
     tags: [
       {
         name: "React",
@@ -252,7 +296,7 @@ const projects = [
   {
     name: "Poke Dex",
     description:
-      "The Pokemon Dex App with Redux is a web application that emulates the popular pokemon power system. Built using React.js and Redux, this app showcases my expertise in frontend development and state management using Redux.",
+      "The Pokemon Dex App with Redux is a web application that emulates the popular pokemon power system. Built using React.js and Redux, this app showcases my expertise in frontend development and state management using Redux. Users can easily browse through an extensive library of Pokemon, checking out detailed stats, abilities, types, and evolutions. The application implements advanced search and filtering mechanisms to find specific Pokemon instantly. The seamless integration of Redux ensures that data flows predictably across the application, providing a smooth and highly responsive user experience for Pokemon fans and developers alike.",
     tags: [
       {
         name: "React",
@@ -271,36 +315,11 @@ const projects = [
     source_code_link: "https://github.com/ujjwalpandey922/pokedex",
     live_code_link: "https://pokedex-phi-dun.vercel.app/",
   },
-  {
-    name: "TODO APP",
-    description:
-      "The MERN Stack TODO App is a full-stack web application that enables users to effortlessly manage their tasks and stay organized. This app showcases my proficiency in developing scalable and efficient web applications.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Node",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: todo,
-    source_code_link: "https://github.com/ujjwalpandey922/redux-todo",
-    live_code_link: "redux-todo-omega-five.vercel.app",
-  },
+
   {
     name: "Youtube Clone",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This web application is a feature-rich video streaming platform that closely emulates the core functionalities of YouTube. Users can effortlessly search for videos, explore trending content, and watch high-quality media in a highly responsive player interface. Built using modern frontend technologies and integrated with robust REST APIs, the application provides a smooth viewing experience across all devices. It also supports viewing channel details, related videos, and comprehensive video statistics. By focusing on performance and an intuitive user interface, this project demonstrates the ability to build scalable, media-heavy applications with a seamless user experience.",
     tags: [
       {
         name: "react",
@@ -326,7 +345,7 @@ const projects = [
   {
     name: "Trip Guide",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations. This application serves as an all-in-one travel companion, simplifying the trip planning process through a beautifully designed, user-friendly interface. Users can explore detailed destination guides, read reviews, and find the best deals tailored to their travel preferences. The platform seamlessly integrates multiple booking services into a single dashboard, ensuring a frictionless reservation experience. With responsive design and smooth animations, it inspires wanderlust while providing practical tools for modern travelers.",
     tags: [
       {
         name: "MERN",
@@ -348,7 +367,7 @@ const projects = [
   {
     name: "Kitchen G",
     description:
-      "The Kitchen Website Template is a responsive web application that showcases a visually appealing and user-friendly design for a kitchen-related website. This template has been designed in Figma and can be converted to a fully functional React web application.",
+      "The Kitchen Website Template is a responsive web application that showcases a visually appealing and user-friendly design for a kitchen-related website. This template has been designed in Figma and carefully converted into a fully functional React web application. It features elegant layouts for displaying culinary services, menus, and high-quality food photography. The design prioritizes user engagement with smooth scrolling, clear call-to-action buttons, and an intuitive navigation system. This project highlights a strong eye for UI/UX principles and the ability to translate pixel-perfect designs into accessible, interactive, and high-performance frontend code.",
     tags: [
       {
         name: "react",
@@ -367,33 +386,11 @@ const projects = [
     source_code_link: "https://github.com/ujjwalpandey922/Gustavo_Kitchen",
     live_code_link: "https://gustavokitchen.netlify.app/",
   },
-  {
-    name: "Chat GPT",
-    description:
-      "The ChatGPT Template is a responsive web application that incorporates an interactive chat interface powered by ChatGPT. This template provides a seamless integration of conversational capabilities into your React web application. The design for this template has been created in Figma and can be converted into a fully functional React web application.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "figma",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: gpt,
-    source_code_link: "https://github.com/ujjwalpandey922/Figma-gpt3",
-    live_code_link: "https://gtp3-figma-design.netlify.app/",
-  },
-  ,
+
   {
     name: "Web3 Address Minting App",
     description:
-      "The Web 3.0 Address Minting App is a decentralized web application that leverages the power of Web 3.0 technologies to provide a secure and user-centric address-looking experience. Built using blockchain and decentralized storage, this app ensures data integrity, privacy, and seamless accessibility from anywhere.",
+      "The Web 3.0 Address Minting App is a decentralized web application that leverages the power of Web 3.0 technologies to provide a secure and user-centric address-minting experience. Built using modern blockchain standards and decentralized storage, this app ensures data integrity, privacy, and seamless accessibility from anywhere. Users can effortlessly connect their digital wallets, mint unique on-chain addresses, and view their transaction histories in real-time. The application simplifies complex blockchain interactions into a smooth, intuitive workflow, demonstrating a deep understanding of decentralized application architecture, smart contract integration, and user-friendly Web3 interfaces.",
     tags: [
       {
         name: "react",

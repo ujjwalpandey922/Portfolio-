@@ -49,33 +49,37 @@ const Works = () => {
                 />
                 <div className="absolute inset-0 flex justify-end m-1 card-img_hover  gap-2  ">
                   {/* ----------GIT REPO----------- */}
-                  <div
-                    onClick={() =>
-                      window.open(project.source_code_link, '_blank')
-                    }
-                    className="h-7 w-7 black-gradient rounded-full cursor-pointer hover:h-8 hover:w-8 "
-                  >
-                    <img src={github} alt="github" />
-                  </div>
+                  {project.source_code_link && (
+                    <div
+                      onClick={() =>
+                        window.open(project.source_code_link, '_blank')
+                      }
+                      className="h-7 w-7 black-gradient rounded-full cursor-pointer hover:h-8 hover:w-8 "
+                    >
+                      <img src={github} alt="github" />
+                    </div>
+                  )}
                   {/* ----------LIVE PROJECTS----------- */}
-                  <div
-                    onClick={() =>
-                      window.open(project.live_code_link, '_blank')
-                    }
-                    className="h-7 w-7 black-gradient rounded-full cursor-pointer hover:h-8 hover:w-8"
-                  >
-                    <img
-                      src={live}
-                      alt="github"
-                      className=" rounded-full object-cover h-7 w-7 hover:h-8 hover:w-8"
-                    />
-                  </div>
+                  {project.live_code_link && (
+                    <div
+                      onClick={() =>
+                        window.open(project.live_code_link, '_blank')
+                      }
+                      className="h-7 w-7 black-gradient rounded-full cursor-pointer hover:h-8 hover:w-8"
+                    >
+                      <img
+                        src={live}
+                        alt="github"
+                        className=" rounded-full object-cover h-7 w-7 hover:h-8 hover:w-8"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
 
               <div className="mt-5">
                 <h3 className="text-white text-xl font-bold">{project.name}</h3>
-                <p className="text-gray-400 text-sm font-semibold mt-4 leading-5 truncate">
+                <p className="text-gray-400 text-sm font-semibold mt-4 leading-5 line-clamp-5">
                   {project.description}
                 </p>
               </div>
