@@ -14,7 +14,6 @@ import {
   mongodb,
   git,
   figma,
-  // docker,
   skitres,
   Sofueled,
   puffles,

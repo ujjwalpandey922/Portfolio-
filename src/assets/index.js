@@ -2,7 +2,6 @@ import nextjsIcon from "./nextjs_icon.png";
 import reactIcon from "./react_icon.png";
 import web3Icon from "./web3_icon.png";
 import mernIcon from "./mern_icon.png";
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -13,7 +12,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -26,17 +24,11 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import Whitehatjr from "./company/Whitehatjr.png";
 import skitres from "./company/skitres.jpeg";
 import puffles from "./company/puffles.jpg";
-import zerostic from "./company/zerostic.jpg";
-import fundinc from "./company/fundinc.jpeg";
 import apeing from "./company/apeing.jpg";
 import Sofueled from "./company/sofueled.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 import todo from "./website.jpg";
 import booking from "./website2.png";
@@ -52,12 +44,8 @@ import web3 from "./website9.jpg";
 export {
   skitres,
   puffles,
-  zerostic,
-  fundinc,
   apeing,
-  Whitehatjr,
   Sofueled,
-  logo,
   nextjsIcon,
   reactIcon,
   web3Icon,
@@ -71,7 +59,6 @@ export {
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
@@ -83,9 +70,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
   todo,
   booking,
   utube,
